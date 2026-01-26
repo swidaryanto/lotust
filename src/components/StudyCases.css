@@ -1,0 +1,75 @@
+.study-cases-section {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.sc-header-group {
+    margin-bottom: 2rem;
+}
+
+.sc-label {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    /* Excluded from 15px rule */
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.sc-separator {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-border);
+    opacity: 1;
+}
+
+.sc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.sc-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    /* Tighter spacing to match reference */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    /* Slight separation between hoverable blocks */
+}
+
+.sc-item-title {
+    font-size: 15px;
+    /* Strictly 15px as requested */
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.sc-item-subtitle {
+    font-size: 15px;
+    /* Explicit 15px for copy */
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.sc-item-date {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+    margin-top: 0rem;
+}
+
+/* Hover Effect - Desktop Only */
+@media (hover: hover) {
+    .sc-list:hover .sc-item {
+        opacity: 0.4;
+    }
+
+    .sc-list .sc-item:hover {
+        opacity: 1;
+    }
+}

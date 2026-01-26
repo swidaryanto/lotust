@@ -1,0 +1,57 @@
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: 'Georgia', 'Times New Roman', Times, serif;
+
+  /* Light Mode Palette (Restored) */
+  --color-bg: #fcfcfc;
+  --color-text-primary: #111111;
+  --color-text-secondary: #555555;
+  --color-border: #e6e6e6;
+
+  --spacing-section: 6rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  font-size: 15px;
+  /* Unified base font size as requested */
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: #000;
+}
+
+/* Utilities */
+.container {
+  max-width: 800px;
+  margin: 0;
+  padding: 6rem 4rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 2rem;
+  }
+}

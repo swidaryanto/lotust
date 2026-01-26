@@ -1,0 +1,47 @@
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.intro-header-group {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.intro-label {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    /* ~24px - Excluded from 15px rule */
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.separator {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-border);
+    /* Reverted to lighter border */
+    opacity: 1;
+}
+
+.intro-content {
+    font-size: 15px;
+    /* Explicitly 15px as requested, though inherited from body */
+    color: #333333;
+    /* Dark grey for light mode */
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.intro-paragraph {
+    margin-bottom: 1.5rem;
+}
+
+.intro-paragraph strong {
+    font-weight: 600;
+    color: #000000;
+}
