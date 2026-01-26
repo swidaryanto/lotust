@@ -33,7 +33,7 @@ export default function StudyCases() {
         <section className="study-cases-section">
             <div className="sc-header-group">
                 <h2 className="sc-label">
-                    Study Cases
+                    Projects
                 </h2>
                 <div className="sc-separator"></div>
             </div>
