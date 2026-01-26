@@ -2,7 +2,7 @@ import './Hero.css';
 
 export default function Hero() {
     return (
-        <section className="container">
+        <section className="container hero-section">
             <div className="intro-wrapper">
                 <div className="intro-header-group">
                     <h2 className="intro-label">
@@ -19,10 +19,7 @@ export default function Hero() {
                         <span style={{ marginLeft: '4px' }}>📩</span>
                     </p>
 
-                    <p className="intro-paragraph">
-                        This page is still growing, but I’m happy to share it with you. If you’d like to see my past projects
-                        and the story of my mentoring sessions, just scroll below—I’d love your feedback or a friendly greeting!
-                    </p>
+                    <p className="intro-paragraph">This page is still growing :)</p>
                 </div>
             </div>
         </section>
