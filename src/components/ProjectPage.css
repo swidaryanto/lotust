@@ -36,8 +36,8 @@
 
 @media (max-width: 480px) {
     .project-title {
-        font-size: 26px;
-        /* -2px from 28px */
+        font-size: 24px;
+        /* -2px from 26px */
     }
 }
 
