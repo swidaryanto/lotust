@@ -29,9 +29,10 @@ const cases: Case[] = [
     },
     {
         id: 3,
-        title: "Integrated Chat GPT on Melaka",
+        title: "Integrate ChatGPT to Melaka",
         subtitle: "Leveraging AI to assist seamless merchant interactions.",
-        date: "January 16, 2026"
+        date: "January 16, 2026",
+        page: "chatgpt-coming-soon"
     }
 ];
 

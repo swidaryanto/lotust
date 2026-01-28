@@ -41,6 +41,19 @@
     opacity: 0.5;
 }
 
+@media (max-width: 480px) {
+
+    .nav-item,
+    .nav-separator {
+        font-size: 16px;
+        /* -2px from 18px */
+    }
+
+    .portfolio-nav {
+        gap: 1rem;
+    }
+}
+
 .intro-content {
     font-size: 15px;
     color: #333333;

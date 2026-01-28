@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Hero from './components/Hero';
 import StudyCases from './components/StudyCases';
 import ComingSoon from './components/ComingSoon';
@@ -17,6 +17,10 @@ function App() {
     const params = new URLSearchParams(window.location.search);
     return params.get('page') || null;
   });
+
+  // Swipe gesture state
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
 
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
@@ -38,6 +42,43 @@ function App() {
     window.history.pushState({}, '', url);
   };
 
+  // Swipe handlers
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+
+    // Only enable swipe on mobile (check width < 768px for safety or stick to 480px as per fonts)
+    if (window.innerWidth > 768) return;
+
+    // Disable swipe if viewing a project page
+    if (currentPage) return;
+
+    const distance = touchStartX.current - touchEndX.current;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      if (activeTab === 'home') handleTabChange('resume');
+      else if (activeTab === 'resume') handleTabChange('activity');
+    }
+
+    if (isRightSwipe) {
+      if (activeTab === 'activity') handleTabChange('resume');
+      else if (activeTab === 'resume') handleTabChange('home');
+    }
+
+    // Reset
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
+
   const renderContent = () => {
     // If a specific page is selected, render it
     if (currentPage === 'flowchart') {
@@ -45,6 +86,24 @@ function App() {
     }
     if (currentPage === 'promo-visibility') {
       return <PromoVisibility onBack={() => handlePageChange(null)} />;
+    }
+    if (currentPage === 'chatgpt-coming-soon') {
+      return (
+        <div>
+          <button
+            className="project-back"
+            onClick={() => handlePageChange(null)}
+            style={{ marginBottom: '2rem' }} // Ensure consistent spacing
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19 12H5"></path>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to Projects
+          </button>
+          <ComingSoon />
+        </div>
+      );
     }
 
     switch (activeTab) {
@@ -60,12 +119,17 @@ function App() {
   };
 
   return (
-    <>
+    <div
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+      style={{ minHeight: '100vh' }}
+    >
       {!currentPage && <Hero activeTab={activeTab} onTabChange={handleTabChange} />}
       <div className="container" style={{ paddingTop: currentPage ? '3rem' : 0 }}>
         {renderContent()}
       </div>
-    </>
+    </div>
   );
 }
 

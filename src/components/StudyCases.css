@@ -94,6 +94,7 @@ a.sc-item:active {
         opacity: 1;
     }
 }
+
 /* Clickable items for internal navigation */
 .sc-item-clickable {
     cursor: pointer;
