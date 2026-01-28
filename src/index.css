@@ -47,7 +47,7 @@ a:hover {
 .container {
   max-width: 800px;
   margin: 0;
-  padding: 6rem 4rem;
+  padding: 3rem 4rem;
 }
 
 @media (max-width: 768px) {

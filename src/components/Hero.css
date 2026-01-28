@@ -1,38 +1,49 @@
-.intro-wrapper {
+.nav-wrapper {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.portfolio-nav {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.intro-header-group {
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
-.intro-label {
+.nav-item {
     font-family: var(--font-serif);
-    font-size: 1.5rem;
-    /* ~24px - Excluded from 15px rule */
+    font-size: 18px;
     font-weight: 400;
-    color: var(--color-text-primary);
-    margin-bottom: 2rem;
+    color: var(--color-text-secondary);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
     letter-spacing: -0.01em;
+    position: relative;
+    transition: color 0.2s;
 }
 
-.separator {
-    width: 60px;
-    height: 1px;
-    background-color: var(--color-border);
-    /* Reverted to lighter border */
-    opacity: 1;
+.nav-item:hover {
+    color: var(--color-text-primary);
+}
+
+.nav-item.active {
+    color: var(--color-text-primary);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+.nav-separator {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    color: var(--color-border);
+    opacity: 0.5;
 }
 
 .intro-content {
     font-size: 15px;
-    /* Explicitly 15px as requested, though inherited from body */
     color: #333333;
-    /* Dark grey for light mode */
     line-height: 1.8;
     max-width: 600px;
 }
@@ -44,4 +55,15 @@
 .intro-paragraph strong {
     font-weight: 600;
     color: #000000;
+}
+
+.hypefast-link {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.2s, color 0.2s;
+    text-decoration: none;
+}
+
+.hypefast-link:hover {
+    color: #00D7C5 !important;
+    border-bottom-color: #00D7C5 !important;
 }

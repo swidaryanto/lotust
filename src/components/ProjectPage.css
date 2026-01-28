@@ -1,0 +1,109 @@
+.project-page {
+    max-width: 700px;
+}
+
+.project-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.project-back:hover {
+    color: var(--color-text-primary);
+}
+
+.project-header {
+    margin-bottom: 3rem;
+}
+
+.project-title {
+    font-family: var(--font-serif);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.project-date {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.project-section h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.project-section p {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.project-section ul,
+.project-section ol {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+.project-section li {
+    margin-bottom: 0.5rem;
+}
+
+.project-references {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.project-references h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.project-references ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-references li {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.project-references a {
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid var(--color-border);
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-references a:hover {
+    color: var(--color-text-primary);
+    border-bottom-color: var(--color-text-primary);
+}

@@ -1,0 +1,141 @@
+.resume-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.resume-header-group {
+    margin-bottom: 2rem;
+}
+
+.resume-label {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.resume-separator {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-border);
+    opacity: 1;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company-name {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.role-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--color-border);
+}
+
+.role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.role-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.role-period {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    opacity: 0.7;
+}
+
+.role-description {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.role-description li {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.role-description li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-border);
+}
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.resume-text {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+.edu-item,
+.mentorship-item {
+    margin-bottom: 1.25rem;
+}
+
+.edu-title,
+.mentor-org {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.edu-school,
+.mentor-role {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .role-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

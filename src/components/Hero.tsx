@@ -1,21 +1,44 @@
 import './Hero.css';
 
-export default function Hero() {
-    return (
-        <section className="container">
-            <div className="intro-wrapper">
-                <div className="intro-header-group">
-                    <h2 className="intro-label">
-                        Introductions<sup>01</sup>
-                    </h2>
-                    <div className="separator"></div>
-                </div>
+interface HeroProps {
+    activeTab: string;
+    onTabChange: (tab: string) => void;
+}
 
+export default function Hero({ activeTab, onTabChange }: HeroProps) {
+    return (
+        <section className="container" style={{ paddingBottom: activeTab === 'home' ? '3rem' : '0' }}>
+            <div className="nav-wrapper">
+                <nav className="portfolio-nav">
+                    <button
+                        className={`nav-item ${activeTab === 'home' ? 'active' : ''}`}
+                        onClick={() => onTabChange('home')}
+                    >
+                        Home
+                    </button>
+                    <span className="nav-separator">/</span>
+                    <button
+                        className={`nav-item ${activeTab === 'resume' ? 'active' : ''}`}
+                        onClick={() => onTabChange('resume')}
+                    >
+                        resume
+                    </button>
+                    <span className="nav-separator">/</span>
+                    <button
+                        className={`nav-item ${activeTab === 'activity' ? 'active' : ''}`}
+                        onClick={() => onTabChange('activity')}
+                    >
+                        Activity Space
+                    </button>
+                </nav>
+            </div>
+
+            {activeTab === 'home' && (
                 <div className="intro-content">
                     <p className="intro-paragraph">
-                        Hej! I’m <strong>Septian Widaryanto</strong>, and I’m excited to create loveable products as a designer at <strong>Hypefast</strong>,
-                        helping their 5+ brands shine. You can explore my current project at <a href="#">Melaka.app</a> 📦
-                        —feel free to share your thoughts or say hi on <a href="#">LinkedIn</a> :) or my email at <a href="mailto:septianwidaryanto@gmail.com">septianwidaryanto@gmail.com</a>
+                        Hej! I’m Septian Widaryanto, and I am a designer at <a href="https://www.hypefast.id/" className="hypefast-link"><strong>Hypefast</strong></a>,
+                        helping their 5+ brands shine. You can explore my current project at <a href="https://dashboard.melaka.app/login">Melaka.app</a> 📦
+                        —feel free to share your thoughts or say hi on <a href="https://linkedin.com/in/septianwidaryanto">LinkedIn</a> :) or my email at <a href="mailto:septianwidaryanto@gmail.com">septianwidaryanto@gmail.com</a>
                         <span style={{ marginLeft: '4px' }}>📩</span>
                     </p>
 
@@ -24,7 +47,7 @@ export default function Hero() {
                         and the story of my mentoring sessions, just scroll below—I’d love your feedback or a friendly greeting!
                     </p>
                 </div>
-            </div>
+            )}
         </section>
     );
 }
