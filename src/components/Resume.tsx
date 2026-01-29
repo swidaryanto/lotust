@@ -19,7 +19,7 @@ const experiences: Experience[] = [
                 description: [
                     "Building D2C Websites (0-1) for 3 Brands: Cessa, Bohopanna & Luxcrime from scratch and enhancing their UX.",
                     "Enhancing the Melaka B2B Dashboard & Catalog experience for HDN to support business operations.",
-                    "Utilize AI Prompt to Support Design & Research Process."
+                    "Utilize AI to Support Design & Research Process."
                 ]
             },
             {
@@ -28,7 +28,7 @@ const experiences: Experience[] = [
                 description: [
                     "Redesigned the Melaka catalog experience [B2C & B2B], improving user navigation and checkout flow, which contributed to a 200% increase in revenue for partnered brands.",
                     "Streamlining landing page and CMS updates using Webflow, reducing engineering effort.",
-                    "Optimized the design system, enabling the team to deliver comparable design tasks in roughly one quarter of the previous time (≈3–4× throughput per designer)",
+                    "Optimized the design system, enabling the team to deliver comparable design tasks in roughly one quarter of the previous time (≈3–4× throughput per designer).",
                     "Led and mentored product design interns, fostering skill development and design best practices."
                 ]
             }
@@ -134,7 +134,7 @@ export default function Resume() {
                         <div className="resume-separator"></div>
                     </div>
                     <p className="resume-text">
-                        Design Strategy & Leadership, Design Research, Design System & Interaction Design
+                        Design Strategy & Leadership, Design Research, Design System, Interaction Design & Prompting (Utilize AI Tools).
                     </p>
                 </div>
                 <div className="resume-column">
