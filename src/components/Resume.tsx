@@ -28,7 +28,7 @@ const experiences: Experience[] = [
                 description: [
                     "Redesigned the Melaka catalog experience [B2C & B2B], improving user navigation and checkout flow, which contributed to a 200% increase in revenue for partnered brands.",
                     "Streamlining landing page and CMS updates using Webflow, reducing engineering effort.",
-                    "Optimized the design system, accelerating the end-to-end design process by 300% through system enhancements.",
+                    "Optimized the design system, enabling the team to deliver comparable design tasks in roughly one quarter of the previous time (≈3–4× throughput per designer)",
                     "Led and mentored product design interns, fostering skill development and design best practices."
                 ]
             }
