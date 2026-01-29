@@ -73,10 +73,6 @@ export default function StudyCases({ onPageChange }: StudyCasesProps) {
                     </div>
                 ))}
             </div>
-
-            <div className="sc-footer-image">
-                <img src="/src/assets/footer_galaxy.jpg" alt="Footer Decoration" />
-            </div>
         </section>
     );
 }
