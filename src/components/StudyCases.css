@@ -111,3 +111,14 @@ a.sc-item:active {
         transform: translateX(2px);
     }
 }
+
+.sc-footer-image {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.sc-footer-image img {
+    width: 20%;
+    filter: grayscale(100%);
+    display: block;
+}
