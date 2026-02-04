@@ -68,7 +68,7 @@ const activities: Activity[] = [
     {
         id: 9,
         title: "Teracy (Alone Together)",
-        subtitle: "Designing an online coworking space for remote workers and freelancers.",
+        subtitle: "An online coworking space for remote workers and freelancers.",
         link: "https://app.teracy.io/invite/u5zvarB2ZUS9wXKvhpCV7b",
         category: "Coworking Space"
     }
