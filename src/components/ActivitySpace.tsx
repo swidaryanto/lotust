@@ -11,37 +11,30 @@ interface Activity {
 const activities: Activity[] = [
     {
         id: 1,
-        title: "Pomodoro Lofi",
+        title: "Ilo Journal",
+        subtitle: "A digital journaling experience focused on simplicity and mindfulness.",
+        link: "https://ilo-ten.vercel.app/",
+        category: "AI Exploration"
+    },
+    {
+        id: 2,
+        title: "My Lovable Profile",
+        subtitle: "Check my lovable profile to learn hiragana, check weather, etc.",
+        link: "https://lovable.dev/@widar",
+        category: "AI Exploration"
+    },
+    {
+        id: 3,
+        title: "Pomodoro Lofi (Figma Make)",
         subtitle: "A productivity tool combining Pomodoro technique with relaxing lofi aesthetics.",
         link: "https://berry-throb-71228815.figma.site/",
         category: "AI Exploration"
     },
     {
-        id: 2,
-        title: "Learn Hiragana",
-        subtitle: "Interactive platform for mastering Japanese Hiragana characters efficiently.",
-        link: "https://hiraganaseptian.lovable.app",
-        category: "AI Exploration"
-    },
-    {
-        id: 3,
-        title: "Cookie Eye (Interactive)",
-        subtitle: "An engaging interactive exploration using modern web technologies.",
-        link: "https://cookieee.lovable.app/",
-        category: "AI Exploration"
-    },
-    {
         id: 4,
-        title: "Animated Gradient",
+        title: "Animated Gradient (Figma Make)",
         subtitle: "Experimenting with smooth, dynamic gradient transitions for web interfaces.",
         link: "https://emboss-mocha-80930300.figma.site",
-        category: "AI Exploration"
-    },
-    {
-        id: 5,
-        title: "Ilo Journal",
-        subtitle: "A digital journaling experience focused on simplicity and mindfulness.",
-        link: "https://ilo-ten.vercel.app/",
         category: "AI Exploration"
     },
     {
