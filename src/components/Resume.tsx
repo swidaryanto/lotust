@@ -133,18 +133,31 @@ export default function Resume() {
                         <h2 className="resume-label">Skills</h2>
                         <div className="resume-separator"></div>
                     </div>
-                    <p className="resume-text">
-                        Design Strategy & Leadership, Design Research, Design System, Interaction Design & Prompting (Utilize AI Tools).
-                    </p>
+                    <ul className="resume-list">
+                        <li>Design Strategy & Leadership</li>
+                        <li>Design Systems & Component Libraries</li>
+                        <li>Interaction Design & Prototyping</li>
+                        <li>User Research & Usability Testing</li>
+                        <li>AI Prototyping & Prompt Engineering</li>
+                        <li>Vibe Coding for Rapid Iteration</li>
+                        <li>Front-End Fundamentals (HTML/CSS/JS)</li>
+                        <li>Design Handoffs & Developer Collaboration</li>
+                    </ul>
                 </div>
                 <div className="resume-column">
                     <div className="resume-header-group">
                         <h2 className="resume-label">Tools</h2>
                         <div className="resume-separator"></div>
                     </div>
-                    <p className="resume-text">
-                        Figma, Framer, PostHog, Antigravity, Lovable, DeepSeek, Perplexity, Jira & Confluence.
-                    </p>
+                    <ul className="resume-list">
+                        <li>Design: Figma (Primary), Framer</li>
+                        <li>Analytics: PostHog</li>
+                        <li>Prototyping: Antigravity, Lovable</li>
+                        <li>Research: Perplexity</li>
+                        <li>Project Management: JIRA, Confluence</li>
+                        <li>Copywriting: DeepSeek</li>
+                        <li>AI/Coding: Claude</li>
+                    </ul>
                 </div>
             </div>
 
