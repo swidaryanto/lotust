@@ -106,6 +106,9 @@ const experiences: Experience[] = [
 export default function Resume() {
     return (
         <section className="resume-section">
+            <p className="resume-tagline">
+                7+ years&rsquo; experience designing consumer websites, business tools, and new product launches.
+            </p>
             <div className="experience-list">
                 {experiences.map((exp, idx) => (
                     <div key={idx} className="experience-item">

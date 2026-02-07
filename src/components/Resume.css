@@ -5,6 +5,17 @@
     gap: 3rem;
 }
 
+.resume-tagline {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
 .resume-header-group {
     margin-bottom: 2rem;
 }
@@ -153,6 +164,10 @@
 }
 
 @media (max-width: 768px) {
+    .resume-tagline {
+        font-size: 15px;
+    }
+
     .resume-grid {
         grid-template-columns: 1fr;
         gap: 2rem;

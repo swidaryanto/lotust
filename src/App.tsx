@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Hero from './components/Hero';
 import StudyCases from './components/StudyCases';
 import ComingSoon from './components/ComingSoon';
@@ -37,6 +37,15 @@ function App() {
     }
     window.history.pushState({}, '', url);
   };
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    };
+
+    scrollToTop();
+    requestAnimationFrame(scrollToTop);
+  }, [activeTab, currentPage]);
 
   const renderContent = () => {
     // If a specific page is selected, render it
