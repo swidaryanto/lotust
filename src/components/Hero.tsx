@@ -42,7 +42,7 @@ export default function Hero({ activeTab, onTabChange }: HeroProps) {
                         <span style={{ marginLeft: '4px' }}>📩</span>
                     </p>
 
-                    <p className="intro-paragraph">
+                    <p className="intro-paragraph intro-paragraph--highlight">
                         This page is still growing, but I’m happy to share it with you. If you’d like to see my past projects
                         and the story of my mentoring sessions, just scroll below—I’d love your feedback or a friendly greeting!
                     </p>
