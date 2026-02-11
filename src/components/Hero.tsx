@@ -24,12 +24,23 @@ export default function Hero({ activeTab, onTabChange }: HeroProps) {
                         resume
                     </button>
                     <span className="nav-separator">/</span>
-                    <button
-                        className={`nav-item ${activeTab === 'activity' ? 'active' : ''}`}
-                        onClick={() => onTabChange('activity')}
-                    >
-                        Activity Space
-                    </button>
+                    <div className="nav-item-with-dropdown">
+                        <button
+                            className={`nav-item ${activeTab === 'activity' ? 'active' : ''}`}
+                            onClick={() => onTabChange('activity')}
+                            aria-describedby="activity-space-dropdown"
+                        >
+                            Activity Space
+                        </button>
+                        <div
+                            id="activity-space-dropdown"
+                            className="activity-space-dropdown"
+                            role="note"
+                            aria-label="Activity Space description"
+                        >
+                            My activity outside working hours. Currently, exploring many things in AI.
+                        </div>
+                    </div>
                 </nav>
             </div>
 

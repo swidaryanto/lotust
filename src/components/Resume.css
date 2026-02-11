@@ -108,9 +108,14 @@
 }
 
 .resume-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.resume-column {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .resume-text {
@@ -148,6 +153,10 @@
     margin-bottom: 1.25rem;
 }
 
+.languages-header-group {
+    margin-top: 2rem;
+}
+
 .edu-title,
 .mentor-org {
     font-size: 15px;
@@ -169,7 +178,7 @@
     }
 
     .resume-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 2rem;
     }
 

@@ -159,7 +159,7 @@ export default function Resume() {
                         <li>Research: Perplexity</li>
                         <li>Project Management: JIRA, Confluence</li>
                         <li>Copywriting: DeepSeek</li>
-                        <li>AI/Coding: Claude</li>
+                        <li>AI/Coding: Claude &amp; Codex</li>
                     </ul>
                 </div>
             </div>
@@ -178,6 +178,15 @@ export default function Resume() {
                         <p className="edu-title">Computer Science, Bachelor Degree</p>
                         <p className="edu-school">Institut Teknologi Telkom Purwokerto</p>
                     </div>
+
+                    <div className="resume-header-group languages-header-group">
+                        <h2 className="resume-label">Languages</h2>
+                        <div className="resume-separator"></div>
+                    </div>
+                    <ul className="resume-list">
+                        <li>Indonesia (Fluent)</li>
+                        <li>English (Professional)</li>
+                    </ul>
                 </div>
                 <div className="resume-column">
                     <div className="resume-header-group">
