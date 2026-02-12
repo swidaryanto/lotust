@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .resume-tagline {
@@ -22,7 +22,7 @@
 
 .resume-label {
     font-family: var(--font-serif);
-    font-size: 18px;
+    font-size: var(--section-title-size);
     font-weight: 400;
     color: var(--color-text-primary);
     margin-bottom: 2rem;
@@ -50,7 +50,7 @@
 
 .company-name {
     font-family: var(--font-serif);
-    font-size: 18px;
+    font-size: var(--section-title-size);
     font-weight: 400;
     color: var(--color-text-primary);
     margin-bottom: 0.5rem;
@@ -154,6 +154,11 @@
     margin-bottom: 1.25rem;
 }
 
+.edu-item:last-child,
+.mentorship-item:last-child {
+    margin-bottom: 0;
+}
+
 .languages-header-group {
     margin-top: 0;
 }
@@ -174,6 +179,14 @@
 }
 
 @media (max-width: 768px) {
+    .resume-header-group {
+        margin-bottom: 1rem;
+    }
+
+    .resume-label {
+        margin-bottom: 1rem;
+    }
+
     .resume-tagline {
         font-size: 15px;
     }
@@ -203,6 +216,20 @@
         grid-template-columns: 1fr;
     }
 
+    .role-title,
+    .edu-title,
+    .mentor-org {
+        font-size: 12px;
+    }
+
+    .role-period,
+    .role-description li,
+    .resume-list li,
+    .edu-school,
+    .mentor-role {
+        font-size: 12px;
+    }
+
     .resume-grid-education .mentorship-block {
         order: 2;
     }
@@ -212,6 +239,6 @@
     }
 
     .resume-grid-education .languages-header-group {
-        margin-top: 2rem;
+        margin-top: 0;
     }
 }

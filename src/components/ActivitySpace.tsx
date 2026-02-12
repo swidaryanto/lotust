@@ -104,13 +104,13 @@ export default function ActivitySpace() {
             </div>
             {renderList(aiExploration)}
 
-            <div className="sc-header-group" style={{ marginTop: '4rem' }}>
+            <div className="sc-header-group sc-header-group-spaced">
                 <h2 className="sc-label">D2C Projects</h2>
                 <div className="sc-separator"></div>
             </div>
             {renderList(d2cWebsites)}
 
-            <div className="sc-header-group" style={{ marginTop: '4rem' }}>
+            <div className="sc-header-group sc-header-group-spaced">
                 <h2 className="sc-label">Coworking Space</h2>
                 <div className="sc-separator"></div>
             </div>

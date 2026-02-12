@@ -44,7 +44,7 @@ export default function StudyCases({ onPageChange }: StudyCasesProps) {
     };
 
     return (
-        <section className="study-cases-section">
+        <section className="study-cases-section study-cases-entry">
             <div className="sc-header-group">
                 <h2 className="sc-label">
                     Projects

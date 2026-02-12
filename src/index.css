@@ -9,6 +9,7 @@
   --color-border: #e6e6e6;
 
   --spacing-section: 6rem;
+  --section-title-size: 18px;
 }
 
 * {
@@ -51,6 +52,10 @@ a {
 @media (max-width: 768px) {
   .container {
     padding: 3rem 1.5rem;
+  }
+
+  :root {
+    --section-title-size: 15px;
   }
 }
 

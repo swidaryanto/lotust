@@ -8,7 +8,7 @@ interface HeroProps {
 
 export default function Hero({ activeTab, onTabChange, runEntryMotion = false }: HeroProps) {
     return (
-        <section className="container" style={{ paddingBottom: activeTab === 'home' ? '3rem' : '0' }}>
+        <section className="container" style={{ paddingBottom: activeTab === 'home' ? '0rem' : '0' }}>
             <div className={runEntryMotion ? 'nav-wrapper entry-block entry-nav' : 'nav-wrapper'}>
                 <nav className="portfolio-nav">
                     <button
