@@ -97,7 +97,7 @@ export default function ActivitySpace() {
     );
 
     return (
-        <section className="study-cases-section">
+        <section className="study-cases-section activity-space-entry">
             <div className="sc-header-group">
                 <h2 className="sc-label">AI Exploration</h2>
                 <div className="sc-separator"></div>

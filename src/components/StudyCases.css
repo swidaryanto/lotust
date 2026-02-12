@@ -3,6 +3,24 @@
     width: 100%;
 }
 
+.activity-space-entry {
+    opacity: 0;
+    transform: translateY(14px);
+    animation: activityEntryReveal 850ms cubic-bezier(0.22, 1, 0.36, 1) 90ms forwards;
+    will-change: opacity, transform;
+}
+
+@keyframes activityEntryReveal {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .sc-header-group {
     margin-bottom: 2rem;
 }
@@ -92,6 +110,14 @@ a.sc-item:active {
 
     .sc-item:hover .external-link-icon {
         opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .activity-space-entry {
+        animation: none;
+        opacity: 1;
+        transform: none;
     }
 }
 

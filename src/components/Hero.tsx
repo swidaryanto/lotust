@@ -3,12 +3,13 @@ import './Hero.css';
 interface HeroProps {
     activeTab: string;
     onTabChange: (tab: string) => void;
+    runEntryMotion?: boolean;
 }
 
-export default function Hero({ activeTab, onTabChange }: HeroProps) {
+export default function Hero({ activeTab, onTabChange, runEntryMotion = false }: HeroProps) {
     return (
         <section className="container" style={{ paddingBottom: activeTab === 'home' ? '3rem' : '0' }}>
-            <div className="nav-wrapper">
+            <div className={runEntryMotion ? 'nav-wrapper entry-block entry-nav' : 'nav-wrapper'}>
                 <nav className="portfolio-nav">
                     <button
                         className={`nav-item ${activeTab === 'home' ? 'active' : ''}`}
@@ -45,7 +46,7 @@ export default function Hero({ activeTab, onTabChange }: HeroProps) {
             </div>
 
             {activeTab === 'home' && (
-                <div className="intro-content">
+                <div className={runEntryMotion ? 'intro-content entry-block entry-intro' : 'intro-content'}>
                     <p className="intro-paragraph">
                         Hej! I’m Septian Widaryanto, and I am a designer at <a href="https://www.hypefast.id/" className="hypefast-link"><strong>Hypefast</strong></a>,
                         helping their 5+ brands shine. You can explore my current project at <a href="https://dashboard.melaka.app/login">Melaka.app</a> 📦

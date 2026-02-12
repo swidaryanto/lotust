@@ -8,6 +8,8 @@ import Flowchart from './components/Flowchart';
 import PromoVisibility from './components/PromoVisibility';
 
 function App() {
+  const [runEntryMotion, setRunEntryMotion] = useState(true);
+
   const [activeTab, setActiveTab] = useState(() => {
     const params = new URLSearchParams(window.location.search);
     return params.get('tab') || 'home';
@@ -37,6 +39,16 @@ function App() {
     }
     window.history.pushState({}, '', url);
   };
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setRunEntryMotion(false);
+    }, 1400);
+
+    return () => {
+      window.clearTimeout(timer);
+    };
+  }, []);
 
   useEffect(() => {
     const scrollToTop = () => {
@@ -88,10 +100,20 @@ function App() {
 
   return (
     <div
+      className={runEntryMotion ? 'app-entry' : undefined}
       style={{ minHeight: '100vh' }}
     >
-      {!currentPage && <Hero activeTab={activeTab} onTabChange={handleTabChange} />}
-      <div className="container" style={{ paddingTop: currentPage ? '3rem' : 0 }}>
+      {!currentPage && (
+        <Hero
+          activeTab={activeTab}
+          onTabChange={handleTabChange}
+          runEntryMotion={runEntryMotion}
+        />
+      )}
+      <div
+        className={runEntryMotion ? 'container entry-block entry-content' : 'container'}
+        style={{ paddingTop: currentPage ? '3rem' : 0 }}
+      >
         {renderContent()}
       </div>
     </div>
