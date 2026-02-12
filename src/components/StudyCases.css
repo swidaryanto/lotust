@@ -155,11 +155,15 @@ a.sc-item:active {
     }
 
     .sc-item-title {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .sc-item-subtitle {
-        font-size: 12px;
+        font-size: 13px;
+    }
+
+    .sc-item-date {
+        font-size: 13px;
     }
 }
 

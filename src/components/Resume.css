@@ -219,7 +219,7 @@
     .role-title,
     .edu-title,
     .mentor-org {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .role-period,
@@ -227,7 +227,7 @@
     .resume-list li,
     .edu-school,
     .mentor-role {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .resume-grid-education .mentorship-block {
