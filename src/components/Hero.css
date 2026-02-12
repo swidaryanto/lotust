@@ -118,6 +118,10 @@
     .activity-space-dropdown::before {
         display: none;
     }
+
+    .intro-content {
+        font-size: 14px;
+    }
 }
 
 .intro-content {
@@ -137,13 +141,21 @@
 }
 
 .intro-content a {
+    transition: opacity 0.2s ease, color 0.2s;
     text-underline-offset: 6px;
 }
 
+.intro-content a:hover {
+    opacity: 0.5;
+}
+
 .hypefast-link {
-    background-image: none;
     transition: color 0.2s;
-    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #0c0a0933;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
 }
 
 .hypefast-link:hover {
