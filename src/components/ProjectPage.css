@@ -36,7 +36,7 @@
 
 @media (max-width: 480px) {
     .project-title {
-        font-size: 24px;
+        font-size: 20px;
         /* -2px from 26px */
     }
 }
@@ -102,6 +102,30 @@
     font-size: 13px;
     color: var(--color-text-secondary);
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .project-date {
+        font-size: 13px;
+    }
+
+    .project-section h3 {
+        font-size: 14px;
+    }
+
+    .project-section p,
+    .project-section ul,
+    .project-section ol {
+        font-size: 13px;
+    }
+
+    .project-references h4 {
+        font-size: 13px;
+    }
+
+    .project-references li {
+        font-size: 12px;
+    }
 }
 
 .project-references a {
