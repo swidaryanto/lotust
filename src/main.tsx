@@ -5,12 +5,11 @@ import './index.css'
 
 // Initialize React Grab for development
 if (import.meta.env.DEV) {
-  // Optional dev-only helper. Safe to ignore if not installed.
-  // @ts-expect-error - optional dependency not present in production builds.
-  import('react-grab')
-    .then((module) => {
-      module.init?.()
-    })
+  // Optional local helper. Use runtime import indirection so Vite doesn't try
+  // to resolve "react-grab" when the package is not installed.
+  const dynamicImport = new Function('s', 'return import(s)') as (s: string) => Promise<any>
+  dynamicImport('react-grab')
+    .then((module) => module.init?.())
     .catch(() => {
       // no-op when react-grab is not installed locally
     })

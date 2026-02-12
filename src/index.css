@@ -34,13 +34,11 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.2s;
-}
-
-a:hover {
-  border-bottom-color: #000;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #0c0a0933;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 /* Utilities */

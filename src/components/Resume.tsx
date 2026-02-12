@@ -164,7 +164,7 @@ export default function Resume() {
                 </div>
             </div>
 
-            <div className="resume-grid">
+            <div className="resume-grid resume-grid-education">
                 <div className="resume-column">
                     <div className="resume-header-group">
                         <h2 className="resume-label">Education</h2>
@@ -178,17 +178,8 @@ export default function Resume() {
                         <p className="edu-title">Computer Science, Bachelor Degree</p>
                         <p className="edu-school">Institut Teknologi Telkom Purwokerto</p>
                     </div>
-
-                    <div className="resume-header-group languages-header-group">
-                        <h2 className="resume-label">Languages</h2>
-                        <div className="resume-separator"></div>
-                    </div>
-                    <ul className="resume-list">
-                        <li>Indonesia (Fluent)</li>
-                        <li>English (Professional)</li>
-                    </ul>
                 </div>
-                <div className="resume-column">
+                <div className="resume-column mentorship-block">
                     <div className="resume-header-group">
                         <h2 className="resume-label">Mentorship</h2>
                         <div className="resume-separator"></div>
@@ -201,6 +192,16 @@ export default function Resume() {
                         <p className="mentor-org">Bangkit Academy</p>
                         <p className="mentor-role">Non-Tech Advisor (UI/UX), 2024</p>
                     </div>
+                </div>
+                <div className="resume-column languages-block">
+                    <div className="resume-header-group languages-header-group">
+                        <h2 className="resume-label">Languages</h2>
+                        <div className="resume-separator"></div>
+                    </div>
+                    <ul className="resume-list">
+                        <li>Indonesia (Fluent)</li>
+                        <li>English (Professional)</li>
+                    </ul>
                 </div>
             </div>
         </section>

@@ -108,13 +108,14 @@
 }
 
 .resume-grid {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: start;
 }
 
 .resume-column {
-    flex: 1 1 0;
     min-width: 0;
 }
 
@@ -154,7 +155,7 @@
 }
 
 .languages-header-group {
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .edu-title,
@@ -178,12 +179,39 @@
     }
 
     .resume-grid {
-        flex-direction: column;
         gap: 2rem;
     }
 
     .role-header {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+.resume-grid-education {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 1.2fr);
+}
+
+@media (max-width: 1024px) {
+    .resume-grid-education {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-grid-education .mentorship-block {
+        order: 2;
+    }
+
+    .resume-grid-education .languages-block {
+        order: 3;
+    }
+
+    .resume-grid-education .languages-header-group {
+        margin-top: 2rem;
     }
 }

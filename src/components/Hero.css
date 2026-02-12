@@ -136,13 +136,16 @@
     color: #000000;
 }
 
+.intro-content a {
+    text-underline-offset: 6px;
+}
+
 .hypefast-link {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    transition: border-color 0.2s, color 0.2s;
+    background-image: none;
+    transition: color 0.2s;
     text-decoration: none;
 }
 
 .hypefast-link:hover {
     color: #00D7C5 !important;
-    border-bottom-color: #00D7C5 !important;
 }
